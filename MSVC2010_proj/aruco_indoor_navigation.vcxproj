@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32B1AD13-9A19-465B-AF04-DC249957AD8E}</ProjectGuid>
+    <RootNamespace>aruco_indoor_navigation</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\bin\src\opencvSheetRelease.props" />
+    <Import Project="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\bin\src\msvcprtd.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\bin\src\opencvSheetRelease.props" />
+    <Import Project="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\bin\src\msvcprtd.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\arucofidmarkers.cpp" />
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\ar_omp.cpp" />
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\board.cpp" />
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\boarddetector.cpp" />
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\cameraparameters.cpp" />
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\chromaticmask.cpp" />
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\cvdrawingutils.cpp" />
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\highlyreliablemarkers.cpp" />
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\marker.cpp" />
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\markerdetector.cpp" />
+    <ClCompile Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\subpixelcorner.cpp" />
+    <ClCompile Include="markerNavigation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\aruco.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\arucofidmarkers.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\ar_omp.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\board.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\boarddetector.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\cameraparameters.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\chromaticmask.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\cvdrawingutils.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\exports.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\highlyreliablemarkers.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\marker.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\markerdetector.h" />
+    <ClInclude Include="E:\bkop\work\aruco\aruco-1.2.5\aruco-1.2.5\src\subpixelcorner.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
